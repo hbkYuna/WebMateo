@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Online Bookstore - Contact</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <!-- Navigation Menu (unique classes for contact) -->
+    <header class="contact-header">
+        <nav class="contact-nav">
+            <ul class="contact-nav-list">
+                <li class="contact-nav-item"><a href="index.html">Home</a></li>
+                <li class="contact-nav-item"><a href="products.html">Products</a></li>
+                <li class="contact-nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h2 class="contact-heading">Get in Touch</h2>
+        <form class="contact-form">
+            <!-- To (Non-editable) -->
+            <div class="contact-form-group">
+                <label for="to-email">To:</label>
+                <input type="email" id="to-email" placeholder="Matteo.akiki@student.kdg.be" disabled>
+            </div>
+
+            <!-- From (User's Email) -->
+            <div class="contact-form-group">
+                <label for="from-email">Your Email:</label>
+                <input type="email" id="from-email" name="from-email" required placeholder="Enter your email...">
+            </div>
+
+            <!-- Message -->
+            <div class="contact-form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="8" required placeholder="Type your message here..."></textarea>
+            </div>
+
+            <div class="contact-form-group">
+                <button type="submit" class="contact-submit-btn">Send Message</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
